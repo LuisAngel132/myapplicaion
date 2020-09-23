@@ -20,7 +20,7 @@ android:paddingRight="30dp"
         android:layout_centerInParent="true"
         android:textAlignment="center"
 
-        android:background="#986F9F"
+        android:background="#C900D5DF"
        >
 
     </TextView>
