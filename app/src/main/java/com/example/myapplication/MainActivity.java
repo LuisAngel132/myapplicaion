@@ -102,6 +102,7 @@ numero1=0;
         numero2=Double.parseDouble(texto.getText().toString());
         operador="x";
         texto.setText("");
+
     }
     public  void division(View view){
         numero2=Double.parseDouble(texto.getText().toString());
