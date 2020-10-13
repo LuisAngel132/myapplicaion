@@ -96,6 +96,7 @@ numero1=0;
         numero2=Double.parseDouble(texto.getText().toString());
         operador="-";
         texto.setText("");
+
     }
     public  void multiplicacion(View view){
         numero2=Double.parseDouble(texto.getText().toString());
