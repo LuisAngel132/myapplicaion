@@ -150,6 +150,7 @@ break;
                 texto.setText(String.valueOf(total));
                 break;
 
+
         }
 
     }
