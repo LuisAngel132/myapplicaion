@@ -668,6 +668,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
+
                 texto.setText(String.valueOf(total));
                 suma = 0;
                 resta = 0;
