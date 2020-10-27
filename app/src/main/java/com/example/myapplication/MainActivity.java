@@ -493,6 +493,7 @@ public class MainActivity extends AppCompatActivity {
             texto.setText(String.valueOf(total));
             division = 0;
 
+
         }
         if (multiplicacion == 1) {
             numero1 = Double.parseDouble(texto.getText().toString());
