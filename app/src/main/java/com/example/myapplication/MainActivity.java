@@ -502,7 +502,6 @@ public class MainActivity extends AppCompatActivity {
 
             } else {
                 total = numero2 * numero1;
-
                 
             }
 
