@@ -683,6 +683,7 @@ public class MainActivity extends AppCompatActivity {
                 total = (numero2 * numero1) / 100;
                 tex.setText(String.valueOf(numero2) + "%" + String.valueOf(numero1));
 
+
                 texto.setText(String.valueOf(total));
                 suma = 0;
                 resta = 0;
