@@ -215,6 +215,7 @@
             android:textSize="40dp"
             android:onClick="numero"
 
+            
             />
         <Button
             android:layout_width="0dp"
