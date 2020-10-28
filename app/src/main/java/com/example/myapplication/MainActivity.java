@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public double[] vnumero2 = new double[vectorcontador];
     public char[] vigual = new char[vectorcontador];
     public double[] vresultado = new double[vectorcontador];
+    int d=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,7 +84,10 @@ public class MainActivity extends AppCompatActivity {
                 texto.setText(cocatenear + "9");
                 break;
             case R.id.boton_punto:
+            if (d==0) {
                 texto.setText(cocatenear + ".");
+                d++;
+            }
                 break;
         }
 
@@ -97,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         texto.setText("");
         total = 0;
         numero2 = 0;
-
+d=0;
         suma = 0;
         resta = 0;
         division = 0;
@@ -107,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sumar(View view) {
+        d--;
         if (multiplicacion == 1) {
             numero1 = Double.parseDouble(texto.getText().toString());
             if (numero5 > 0) {
@@ -210,6 +215,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resta(View view) {
+        d--;
         if (multiplicacion == 1) {
             numero1 = Double.parseDouble(texto.getText().toString());
             if (numero5 > 0) {
@@ -317,6 +323,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void multiplicacion(View view) {
+        d--;
         if (suma == 1) {
             numero1 = Double.parseDouble(texto.getText().toString());
             if (numero5 > 0) {
@@ -399,6 +406,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void division(View view) {
+        d--;
         if (multiplicacion == 1) {
             numero1 = Double.parseDouble(texto.getText().toString());
             if (numero5 > 0) {
@@ -474,6 +482,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void porciento(View view) {
+        d--;
         if (division == 1) {
 
             numero1 = Double.parseDouble(texto.getText().toString());
@@ -502,7 +511,7 @@ public class MainActivity extends AppCompatActivity {
 
             } else {
                 total = numero2 * numero1;
-                
+
             }
 
             suma = 0;
@@ -570,6 +579,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void total(View view) {
+        d--;
         vectornumero++;
         switch (operador) {
             case "+":
